@@ -1,0 +1,301 @@
+.results-section {
+  background: white;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
+  animation: slideIn 0.3s ease;
+  border: 1px solid #e5e5e5;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.results-section > h2 {
+  font-size: 1rem;
+  margin-bottom: 0;
+  color: #1a1a1a;
+  padding: 1.5rem;
+  border-bottom: 1px solid #e5e5e5;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  padding: 1.5rem;
+}
+
+.result-card {
+  background: white;
+  border-radius: 0;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 1.5rem;
+}
+
+.result-card:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.card-header h3 {
+  font-size: 0.95rem;
+  color: #1a1a1a;
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.fallacy-count {
+  background: #1a1a1a;
+  color: white;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.fallacy-list,
+.counter-list,
+.assumption-list,
+.recommendation-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fallacy-item,
+.counter-item,
+.assumption-item,
+.recommendation-item {
+  margin-bottom: 0.75rem;
+  padding: 0.75rem 0;
+  background: white;
+  border-radius: 0;
+  border: none;
+}
+
+.fallacy-item:last-child,
+.counter-item:last-child,
+.assumption-item:last-child,
+.recommendation-item:last-child {
+  margin-bottom: 0;
+}
+
+.fallacy-item strong {
+  color: #1a1a1a;
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.fallacy-item p {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.severity {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.severity[data-severity="High"] {
+  background: #f0f0f0;
+  color: #1a1a1a;
+}
+
+.severity[data-severity="Medium"] {
+  background: #f0f0f0;
+  color: #1a1a1a;
+}
+
+.severity[data-severity="Low"] {
+  background: #f0f0f0;
+  color: #1a1a1a;
+}
+
+.no-issues {
+  color: #1a1a1a;
+  font-weight: 500;
+  padding: 0.75rem;
+  text-align: left;
+  background: white;
+  border-radius: 0;
+  font-size: 0.9rem;
+}
+
+.evidence-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.evidence-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  background: white;
+  border-radius: 0;
+  gap: 1rem;
+}
+
+.evidence-item .label {
+  font-weight: 500;
+  color: #1a1a1a;
+  font-size: 0.9rem;
+}
+
+.evidence-item .value {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #1a1a1a;
+}
+
+.value.positive {
+  color: #1a1a1a;
+}
+
+.value.negative {
+  color: #666;
+}
+
+.strength-bar {
+  flex: 1;
+  height: 6px;
+  background: #e5e5e5;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.strength-fill {
+  height: 100%;
+  background: #1a1a1a;
+  border-radius: 0;
+  transition: width 0.3s ease;
+}
+
+.score-text {
+  font-weight: 600;
+  color: #1a1a1a;
+  font-size: 0.85rem;
+  min-width: 35px;
+  text-align: right;
+}
+
+.counter-item p,
+.assumption-item p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.recommendation-item p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.assessment-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.assessment-score {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+
+.badge {
+  padding: 0.3rem 0.8rem;
+  border-radius: 0;
+  font-weight: 600;
+  font-size: 0.8rem;
+  border: 1px solid #1a1a1a;
+  background: white;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.assessment-text {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+  padding: 0;
+  background: white;
+  border-radius: 0;
+}
+
+.fallacies-card {
+  border: none;
+}
+
+.evidence-card {
+  border: none;
+}
+
+.counter-card {
+  border: none;
+}
+
+.assumptions-card {
+  border: none;
+}
+
+.recommendations-card {
+  border: none;
+}
+
+.assessment-card {
+  border: none;
+  grid-column: 1;
+}
+
+@media (max-width: 640px) {
+  .results-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .result-card {
+    padding: 0;
+  }
+
+  .card-header h3 {
+    font-size: 0.9rem;
+  }
+}
