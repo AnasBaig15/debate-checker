@@ -3,7 +3,7 @@ import './App.css'
 import ArgumentValidator from './components/ArgumentValidator'
 import Header from './components/Header'
 
-function App() {
+function App() { 
   return (
     <>
       <Header />
