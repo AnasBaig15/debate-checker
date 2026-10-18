@@ -38,7 +38,7 @@ export default function ArgumentValidator() {
               rows="5"
             />
           </div>
-
+ 
           <div className="button-group">
             <button
               onClick={handleAnalyze}
