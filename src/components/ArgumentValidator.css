@@ -39,12 +39,13 @@
 }
 
 .results-section > h2 {
-  font-size: 1.8rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
   margin-bottom: 2rem;
   color: #1a1a1a;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.2px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -92,10 +93,12 @@
 }
 
 .card-header h3 {
+  font-family: 'Poppins', sans-serif;
   font-size: 1.2rem;
   color: #1a1a1a;
   margin: 0;
   font-weight: 700;
+  letter-spacing: 0.3px;
 }
 
 .fallacy-count {
@@ -107,6 +110,7 @@
   font-weight: 700;
   box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
   animation: pulse 2s ease-in-out infinite;
+  font-family: 'Poppins', sans-serif;
 }
 
 @keyframes pulse {
@@ -133,6 +137,7 @@
   border-radius: 12px;
   border-left: 4px solid #667eea;
   transition: all 0.3s ease;
+  font-family: 'Inter', sans-serif;
 }
 
 .fallacy-item:last-child,
@@ -152,18 +157,22 @@
 }
 
 .fallacy-item strong {
+  font-family: 'Poppins', sans-serif;
   color: #ff6b6b;
   display: block;
   margin-bottom: 0.5rem;
   font-weight: 700;
   font-size: 0.95rem;
+  letter-spacing: 0.2px;
 }
 
 .fallacy-item p {
+  font-family: 'Inter', sans-serif;
   font-size: 0.9rem;
   color: #555;
   margin: 0.3rem 0 0 0;
   line-height: 1.6;
+  font-weight: 400;
 }
 
 .severity {
@@ -174,7 +183,8 @@
   padding: 0.3rem 0.6rem;
   border-radius: 6px;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .severity[data-severity="High"] {
@@ -196,6 +206,7 @@
 }
 
 .no-issues {
+  font-family: 'Inter', sans-serif;
   color: #51a949;
   font-weight: 600;
   padding: 1rem;
@@ -229,12 +240,15 @@
 }
 
 .evidence-item .label {
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   color: #1a1a1a;
   font-size: 0.95rem;
+  letter-spacing: 0.2px;
 }
 
 .evidence-item .value {
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 0.9rem;
   color: #667eea;
@@ -266,6 +280,7 @@
 }
 
 .score-text {
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   color: #667eea;
   font-size: 0.9rem;
@@ -275,17 +290,21 @@
 
 .counter-item p,
 .assumption-item p {
+  font-family: 'Inter', sans-serif;
   margin: 0;
   font-size: 0.9rem;
   color: #555;
   line-height: 1.6;
+  font-weight: 400;
 }
 
 .recommendation-item p {
+  font-family: 'Inter', sans-serif;
   margin: 0;
   font-size: 0.9rem;
   color: #555;
   line-height: 1.6;
+  font-weight: 400;
 }
 
 .assessment-content {
@@ -299,15 +318,17 @@
   align-items: center;
   gap: 1rem;
   font-size: 1rem;
+  font-family: 'Inter', sans-serif;
 }
 
 .badge {
+  font-family: 'Poppins', sans-serif;
   padding: 0.5rem 1.2rem;
   border-radius: 20px;
   font-weight: 700;
   font-size: 0.85rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.2px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -332,6 +353,7 @@
 }
 
 .assessment-text {
+  font-family: 'Inter', sans-serif;
   margin: 0;
   font-size: 0.95rem;
   color: #555;
@@ -340,6 +362,7 @@
   background: rgba(245, 247, 255, 0.5);
   border-radius: 12px;
   border-left: 4px solid #667eea;
+  font-weight: 400;
 }
 
 .fallacies-card { border-left-color: #ff6b6b; }

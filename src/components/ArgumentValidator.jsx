@@ -70,7 +70,7 @@ export default function ArgumentValidator() {
       {/* AdSense placeholder */}
       <aside className="ad-sidebar">
         <div className="ad-placeholder">
-          <p>Advertisement</p>
+          <p>Something new </p>
         </div>
       </aside>
     </main>
